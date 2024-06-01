@@ -1,0 +1,23 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+  padding: 25px;
+  align-items: center;
+  position: relative;
+  width: var(--sidebar-width);
+  background: var(--inverted-bg-color);
+  height: var(--sidebar-heigth);
+
+  transition: width 0.12s ease-in-out;
+}
+
+.collapsed {
+  width: var(--sidebar-collapsed-width);
+}
+
+button.toggle {
+  margin-bottom: auto;
+  color: var(--inverted-primary-color);
+}
