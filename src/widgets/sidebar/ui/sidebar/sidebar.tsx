@@ -25,7 +25,7 @@ export const Sidebar = ({className}: IsidebarProps) => {
                 className={cls.toggle}
                 theme={ThemeButton.CLEAR}
                 onClick={handleCollapseButtonClick}>
-                toggle
+                {'<>'}
             </Button>
             <LanguageSwitcher />
             <ThemeSwitcher />
