@@ -12,7 +12,9 @@ interface IlanguageSwitcherProps {
 export const LanguageSwitcher = ({className}: IlanguageSwitcherProps) => {
     const {t, i18n} = useTranslation('translation');
 
-    const handleTranslateButtonClick = () => i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
+    const handleTranslateButtonClick = () => i18n.changeLanguage(i18n.language === 'ru'
+        ? 'en'
+        : 'ru');
     const buttonClassName = classNames([className, cls.translateButton]);
 
     return (

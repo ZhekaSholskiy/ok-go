@@ -51,7 +51,7 @@ module.exports = {
             ignoreAttribute: ['to'],
         }],
         'react/jsx-one-expression-per-line': 'off',
-        'max-len': ['error', {ignoreComments: true}],
+        'max-len': ['error', {ignoreComments: true, code: 100}],
     },
     globals: {
         __IS_DEV__: true,

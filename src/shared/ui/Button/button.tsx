@@ -18,7 +18,10 @@ export const Button = (props: IbuttonProps) => {
     } = props;
 
     return (
-        <button type="button" className={classNames([cls.button, className, cls[theme]])} {...otherProps}>
+        <button
+            type="button"
+            className={classNames([cls.button, className, cls[theme]])}
+            {...otherProps}>
             {children}
         </button>
     );
