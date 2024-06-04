@@ -48,7 +48,7 @@ module.exports = {
         'react/jsx-closing-bracket-location': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
-            ignoreAttribute: ['to'],
+            ignoreAttribute: ['to', 'data-testid'],
         }],
         'react/jsx-one-expression-per-line': 'off',
         'max-len': ['error', {ignoreComments: true, code: 100}],
@@ -57,4 +57,12 @@ module.exports = {
         __IS_DEV__: true,
         React: true,
     },
+    overrides: [
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+            },
+        },
+    ],
 };

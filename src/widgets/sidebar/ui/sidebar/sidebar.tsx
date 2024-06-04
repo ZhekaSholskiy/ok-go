@@ -20,8 +20,9 @@ export const Sidebar = ({className}: IsidebarProps) => {
     });
 
     return (
-        <div className={sidebarClassName}>
+        <div data-testid="sidebar" className={sidebarClassName}>
             <Button
+                data-testid="expand-button"
                 className={cls.toggle}
                 theme={ThemeButton.CLEAR}
                 onClick={handleCollapseButtonClick}>

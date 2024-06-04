@@ -9,7 +9,7 @@ export enum ThemeButton {
 
 interface IbuttonProps extends HTMLAttributes<HTMLButtonElement>{
     className?: string,
-    theme: ThemeButton,
+    theme?: ThemeButton,
 }
 
 export const Button = (props: IbuttonProps) => {
