@@ -6,12 +6,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: none;
+    color: var(--primary-color);
 }
 
 .clear {
-    padding: 0;
     border: 0;
     background: none;
     outline: none;
     margin: 0;
+}
+
+.outline {
+    border: 1px solid var(--primary-color);
 }
