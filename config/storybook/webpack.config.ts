@@ -13,12 +13,10 @@ export default ({config}: {config: webpack.Configuration}) => {
     config.resolve.modules.push(paths.src);
     config.resolve.extensions.push('.ts', '.tsx');
 
-    config.module.rules = config.module.rules.map((rule: webpack.RuleSetRule) => {
-        if (/svg/.test(rule.test as string)) {
-            return {...rule, exclude: /\.svg/};
+    config.module.rules.forEach((rule: webpack.RuleSetRule, idx, array: webpack.RuleSetRule[]) => {
+        if (/svg/.test(array[idx].test as string)) {
+            Object.assign(array[idx], {exclude: /\.svg/});
         }
-
-        return rule;
     });
 
     config.module.rules.push({
