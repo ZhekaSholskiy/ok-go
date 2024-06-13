@@ -18,7 +18,7 @@ export default ({config}: {config: webpack.Configuration}) => {
             Object.assign(array[idx], {exclude: /\.svg/});
         }
     });
-    // fake changes
+
     config.module.rules.push({
         test: /\.svg$/,
         loader: '@svgr/webpack',
